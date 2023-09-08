@@ -1,0 +1,208 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(161, 230, 230);
+}
+
+.dflex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+header,
+footer {
+  background-color: rgb(245, 209, 109);
+}
+
+main {
+  padding: 15px;
+}
+
+#logo {
+  max-width: 100px;
+}
+
+ul,
+li a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-size: 15px;
+}
+
+footer {
+  font-size: 15px;
+  text-align: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.mealimg {
+  width: 200px;
+}
+
+.mealtitle {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+h2 {
+  color: rgb(115, 164, 236);
+}
+
+.container,
+.item {
+  width: 300px;
+  height: 460px;
+  margin-bottom: 40px;
+}
+
+.item {
+  border: 3px solid rgb(115, 164, 236);
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgb(209, 211, 212);
+}
+
+#likes {
+  background-color: transparent;
+  border: transparent;
+  font-size: 30px;
+  color: rgb(115, 164, 236);
+}
+
+#likes:active {
+  color: red;
+  font-weight: 900;
+}
+
+#comments {
+  background-color: rgb(209, 211, 212);
+  width: 100px;
+  height: 34px;
+  border-radius: 12px;
+  border: 3px solid rgb(115, 164, 236);
+}
+
+#commentsPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 90vw;
+  height: 90vh;
+  max-height: 90vh;
+  overflow-y: auto;
+  background-color: rgb(209, 211, 212);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border: 3px solid rgb(115, 164, 236);
+}
+
+#commentsPopup h2 {
+  margin-bottom: 20px;
+}
+
+#commentsPopup img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+#details-instructions {
+  color: rgb(115, 164, 236);
+  padding: 30px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+#commentsPopup h3 {
+  color: rgb(115, 164, 236);
+  margin-bottom: 25px;
+}
+
+#nameInput {
+  margin-bottom: 10px;
+  width: 70%;
+  padding: 5px;
+  border: 1px solid rgb(115, 164, 236);
+}
+
+#commentInput {
+  margin-bottom: 20px;
+  width: 70%;
+  padding: 5px;
+  height: 100px;
+  border: 1px solid rgb(115, 164, 236);
+}
+
+#commentsPopup .closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 40px;
+  cursor: pointer;
+  color: rgb(115, 164, 236);
+}
+
+#submitCommentButton {
+  background-color: rgb(209, 211, 212);
+  width: 120px;
+  height: 40px;
+  border-radius: 12px;
+  border: 2px solid rgb(115, 164, 236);
+  color: rgb(115, 164, 236);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.comment-text {
+  color: rgb(115, 164, 236);
+  font-size: 14px;
+}
+
+.comments-count {
+  color: rgb(115, 164, 236);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#mainTitle {
+  color: rgb(115, 164, 236);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.meal {
+  border: 4px solid #eceaea;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  ul {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
